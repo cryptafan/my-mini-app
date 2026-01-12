@@ -3,10 +3,9 @@ const ROOT_URL = "https://my-mini-app-rose.vercel.app";
 
 export const minikitConfig = {
   accountAssociation: {
-    // Пока пустой, заполним после генерации подписи
-    header: "",
-    payload: "",
-    signature: "",
+    header: "eyJmaWQiOjQ1ODA4LCJ0eXBlIjoiY3VzdG9keSIsImtleSI6IjB4NzYwQjA0NDc5NjM4MTExNzNmRjg3YDPBYzA5OEJBQ0YxNzNCYkU0OCJ9",
+    payload: "eyJkb21haW4iOiJteS1taW5pLWFwcC1yb3NlLnZlcmNlbC5hcHAifQ==",
+    signature: "MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
   },
   miniapp: {
     version: "1",
