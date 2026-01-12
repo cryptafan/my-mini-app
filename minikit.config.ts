@@ -3,9 +3,9 @@ const ROOT_URL = "https://my-mini-app-rose.vercel.app";
 
 export const minikitConfig = {
   accountAssociation: {
-    header: "eyJmaWQiOjQ1ODA4LCJ0eXBlIjoiY3VzdG9keSIsImtleSI6IjB4NzYwQjA0NDc5NjM4MTExNzNmRjg3YDPBYzA5OEJBQ0YxNzNCYkU0OCJ9",
-    payload: "eyJkb21haW4iOiJteS1taW5pLWFwcC1yb3NlLnZlcmNlbC5hcHAifQ==",
-    signature: "MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    header: "eyJmaWQiOjMxMTc5NiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDgwOTNkMjVDZjJlQmE1MWYyNTFDNDZmZjRCQjE4MDc2QTM1ZjNDMjcifQ",
+    payload: "eyJkb21haW4iOiJteS1taW5pLWFwcC1yb3NlLnZlcmNlbC5hcHAifQ",
+    signature: "ER3zH8pU2cyjBPDaKpZs3KBM8HxL/NXbLIyIhTu9R7hdoX/3iO89XEtQRtitJMNq6JDmHc2MHr3XcjhG0wTD3hs=",
   },
   miniapp: {
     version: "1",
