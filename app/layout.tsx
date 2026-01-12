@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +16,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ай, гитарист! Mini App",
   description: "Простое демо-приложение для Base Mini Apps",
-  other: {
-    'base-app_id': '696dbc2eb8395f034ac22646',
-  },
 };
 
 export default function RootLayout({
@@ -27,6 +25,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head>
+        <Script
+          id="base-meta-tag"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.head.insertAdjacentHTML('beforeend', '<meta name="base-app_id" content="696dbc2eb8395f034ac22646" />');
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
