@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ай, гитарист! Mini App",
   description: "Простое демо-приложение для Base Mini Apps",
+  other: {
+    'base-app_id': '696dbc2eb8395f034ac22646',
+  },
 };
 
 export default function RootLayout({
@@ -24,9 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <head>
-        <meta name="base-app_id" content="696dbc2eb8395f034ac22646" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
